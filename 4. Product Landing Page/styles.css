@@ -3,7 +3,12 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: #fcdcdc;
+  background-color: #eec5c5;
+}
+
+p,
+ul {
+  font-size: 18px;
 }
 
 * {
@@ -59,7 +64,9 @@ body {
 .nav-link {
   text-decoration: none;
   margin: 15px;
+  font-size: 15px;
   color: #ffffff;
+  transition: 0.3s ease-in-out;
 }
 
 .div-right ul {
@@ -73,23 +80,31 @@ body {
   width: 100%;
 }
 
-#About,
-.div-About {
+#About {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 20px;
 }
 
-.h2-about {
+.h2-div,
+.h3-div {
   margin: 60px 0 20px 0;
+  max-width: 100%;
 }
 
-h2 {
+#About .h2-div:nth-of-type(2),
+.div-video h2 {
   margin: 30px 0 20px 0;
 }
 
-#About ul {
+.div-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-ul ul {
   display: flex;
   flex-direction: column;
   max-width: 60%;
@@ -97,9 +112,10 @@ h2 {
   gap: 15px;
 }
 
-#About p {
+#About p,
+#Models p {
   display: flex;
-  max-width: 60%;
+  max-width: 100%;
   margin-bottom: 20px;
 }
 
@@ -109,11 +125,14 @@ h2 {
   border: 5px solid #a72424;
 }
 
+#About,
 #Models {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
   font-size: 20px;
+  max-width: 60%;
 }
 
 hr {
@@ -124,6 +143,7 @@ hr {
 
 .div-car-info {
   display: flex;
+  flex-direction: column;
   align-content: space-between;
 }
 
@@ -152,6 +172,7 @@ hr {
   padding: 0;
   margin-top: 12px;
   margin-bottom: 0;
+  transition: 0.3s ease-in-out;
 }
 
 .price {
@@ -174,14 +195,18 @@ hr {
   align-items: center;
 }
 
-#Purchase {
+#Shop {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 60%;
+  margin: auto;
 }
 
-#Purchase h3 {
-  margin: 30px auto;
+#Shop h3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 form {
@@ -189,4 +214,95 @@ form {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+
+#email,
+#password {
+  width: 170px;
+  height: 25px;
+  border: double;
+  padding: 5px;
+}
+
+#submit {
+  width: 90px;
+  height: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 2px solid black;
+  background-color: #d8d0d0;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+footer p {
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px;
+  margin-top: 35px;
+}
+
+.nav-link:hover {
+  color: #da1e1e;
+}
+
+.div-car-info2:hover .Model-3-img,
+.div-car-info2:hover .Model-Y-img,
+.div-car-info2:hover .Model-S-img,
+.div-car-info2:hover .Model-X-img {
+  transform: scale(1.02);
+  box-shadow: 0 0.5em 2em 0.5em #a3230d;
+}
+
+.div-car-info2:hover .name,
+.div-car-info2:hover .name,
+.div-car-info2:hover .name,
+.div-car-info2:hover .name {
+  transform: scale(1.05);
+}
+
+#submit:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #da1e1e;
+}
+
+@media (max-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    visibility: hidden;
+  }
+  #header-img {
+    width: 40px;
+    height: auto;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+  #video {
+    width: 450px;
+    height: 250px;
+  }
+  .div-cars-pictures div {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .div-car-info img {
+    display: flex;
+    margin: auto;
+    width: 110px;
+    height: 110px;
+  }
+  .price {
+    display: none;
+  }
+  .div-video .h2-div,
+  #Shop .h3-div {
+    text-align: center;
+  }
 }
