@@ -87,15 +87,16 @@ ul {
   font-size: 20px;
 }
 
-.h2-div,
-.h3-div {
+.h2,
+.h3 {
   margin: 60px 0 20px 0;
   max-width: 100%;
 }
 
-#About .h2-div:nth-of-type(2),
+.div-ul .h2,
 .div-video h2 {
   margin: 30px 0 20px 0;
+  font-size: 30px;
 }
 
 .div-ul {
@@ -299,10 +300,10 @@ footer p {
     height: 110px;
   }
   .price {
-    display: none;
+    font-size: 10px;
   }
-  .div-video .h2-div,
-  #Shop .h3-div {
+  .h2,
+  .h3 {
     text-align: center;
   }
 }
