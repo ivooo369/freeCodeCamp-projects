@@ -11,7 +11,7 @@ body {
   margin: 0;
 }
 
-.main-nav {
+.navbar {
   display: flex;
   justify-content: flex-end;
   background-color: #45645b;
@@ -71,12 +71,40 @@ ul {
 #projects {
   text-align: center;
   padding: 40px 15px;
+  background-color: #6060ef;
 }
 
 .projects-header {
   margin: auto;
-  max-width: 600px;
-  font-size: 35px;
+  max-width: 700px;
+  font-size: 28px;
+  margin: 2.5rem auto;
   font-weight: bold;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid white;
+  color: #ffffff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1.5rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+img {
+  display: block;
+}
+
+.project-title {
+  font-size: 25px;
+  padding: 20px 10px;
 }
