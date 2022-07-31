@@ -68,7 +68,7 @@ header p {
 #navbar a {
   display: block;
   font-weight: bold;
-  margin: 12px auto;
+  margin: 9px auto;
   color: #4d4e53;
   text-decoration: none;
   cursor: pointer;
@@ -110,6 +110,15 @@ hr {
   border: 2px solid black;
 }
 
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.5em 2em 0.5em #c6c605;
+}
+
+#js-p:hover {
+  color: #c6c605;
+}
+
 @media only screen and (max-width: 1000px) {
   #navbar ul,
   img {
@@ -117,7 +126,7 @@ hr {
   }
   #main-doc {
     position: relative;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 0;
     margin-left: 0;
   }
@@ -129,7 +138,7 @@ hr {
     padding: 0;
     margin: 0;
     width: 100%;
-    max-height: 75px;
+    max-height: 55px;
     border: none;
     z-index: 1;
     border-bottom: 2px solid;
@@ -145,13 +154,4 @@ hr {
     position: relative;
     margin: 0;
   }
-}
-
-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0.5em 2em 0.5em #c6c605;
-}
-
-#js-p:hover {
-  color: #c6c605;
 }
